@@ -22,8 +22,8 @@ services:
       - AppNet
     restart: on-failure
   angular:
-    image: badiskhalsi/front
-    container_name: angularproject
+    image: badiskhalsi/angularproject
+    container_name: angular
     ports:
       - 80:80
     depends_on:
