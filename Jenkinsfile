@@ -30,8 +30,13 @@ agent any
                      	sh 'docker push badiskhalsi/angularproject'
                         }  }
 
+                        stage('Docker compose') {
 
+                          steps {
+                               sh 'docker-compose up -d'
+                                 }  }
 
+        }
         }
 
       }
