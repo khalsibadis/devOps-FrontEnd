@@ -15,7 +15,7 @@ agent any
                          }
 
 
-        }
+
 
       stage('Docker login') {
 
@@ -32,6 +32,6 @@ agent any
 
 
 
-
+        }
 
       }
