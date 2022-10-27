@@ -5,6 +5,7 @@ agent any
 
 
 
+
 			    stage('Build docker image'){
                              steps{
                                  script{
