@@ -12,7 +12,7 @@ services:
      - AppNet
 
   spring-boot:
-    image: badiskhalsi/springprojet
+    image: badiskhalsi/springproject
     container_name: spring
     ports:
       - 8089:8089
