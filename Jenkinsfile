@@ -49,4 +49,5 @@ post {
                          subject: "Pipeline Failure",
                          body: "Failure on job ${env.JOB_NAME}, Build Number: ${env.BUILD_NUMBER}, Build URL: ${env.BUILD_URL} "
                     }
+}
       }
