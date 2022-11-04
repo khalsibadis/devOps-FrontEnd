@@ -1,16 +1,15 @@
 version: '3'
 services:
   database:
-    container_name: mysqldb
-    image: mysql/mysql-server:8.0
-    restart: unless-stopped
-    ports:
-     - 3307:3307
+    image: mysql
+    container_name: mysql
     environment:
-     - MYSQL_ROOT_PASSWORD=root
-     - MYSQL_DATABASE=tpachato
-     - MYSQL_USER=root
-     - MYSQL_PASSWORD=root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: tpachato
+    ports:
+      - 3307:3307
+    networks:
+     - AppNet
 
   spring-boot:
     image: badiskhalsi/springproject
