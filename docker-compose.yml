@@ -7,10 +7,10 @@ services:
     ports:
      - 3307:3307
     environment:
-     - MYSQL_ROOT_PASSWORD=pass
-     - MYSQL_DATABASE=achatdb
+     - MYSQL_ROOT_PASSWORD=root
+     - MYSQL_DATABASE=tpachato
      - MYSQL_USER=root
-     - MYSQL_PASSWORD=pass
+     - MYSQL_PASSWORD=root
 
   spring-boot:
     image: badiskhalsi/springproject
