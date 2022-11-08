@@ -41,7 +41,7 @@ agent any
 post {
                                                 success {
                                                      mail to: "jbara.aymen@esprit.tn",
-                                                     subject: "Pipeline Success",
+                                                     subject: "Badis Khalsi Pipeline Success",
                                                      body: "success on job ${env.JOB_NAME}, Build Number: ${env.BUILD_NUMBER}, Build URL: ${env.BUILD_URL}"
                                                 }
                     failure {
